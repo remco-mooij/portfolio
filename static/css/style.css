@@ -25,6 +25,11 @@
   font-size: 20px;
 }
 
+.nav-spacing {
+  margin-right: 50px;
+}
+
+
 #home {
   background: url("../images/OGA3ET0.jpg") no-repeat center center fixed;
   color: white;
@@ -119,7 +124,7 @@
 }
 
 .card {
-  height: 80vh;
+  height: 75vh;
 }
 
 .card-img-top {
@@ -132,6 +137,11 @@
 .card-text {
   height: 120px;
   font-size: 14px;
+}
+
+.card-body a {
+  position: absolute;
+  bottom: 20px;
 }
 
 /*--- Fixed Background Image --*/
