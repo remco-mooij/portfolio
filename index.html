@@ -149,21 +149,100 @@
             <br>
             <div class="text-center">
               <h2>Contact Information</h2>
-              <hr style="text-align: left; margin-left: 0; margin-right:5%;">
+              <hr style="text-align: left; margin-left: 0; margin-right:5%; margin-bottom: 5%;">
               <img src="static/images/home-icon.png" style="max-height:40px;"> 
               <p>Raleigh, NC</p>
-              <img src="static/images/logo-github.png" style="max-height: 80px;">
+              <a href="https://github.com/remco-mooij" target="_blank">
+                <img src="static/images/logo-github.png" style="max-height: 70px;">
+              </a>
+              
               <br><br>
-              <img src="static/images/LI-Logo.png" style="max-height: 30px;">
+              <a href="https://www.linkedin.com/in/remcomooij" target="_blank">
+                <img src="static/images/LI-Logo.png" style="max-height: 30px;">
+              </a>
+              
               <br><br>
-              <img src="static/images/email-icon.png" style="max-height:40px;">
-              <p>RemcoMooij@gmail.com</p>
+              <a href="mailto:remcomooij@gmail.com">
+                <img src="static/images/email-icon.png" style="max-height:40px;">
+                <p>RemcoMooij@gmail.com</p>
+              </a>
+              
+              
             </div>
   
           </div>
           
         </div>
         
+      </div>
+
+      <!--Timeline-->
+      <div class="timeline">
+        <h1>CAREER <span>TIMELINE</span></h1>
+        <br>
+        <div class="process-wrapper">
+          <div id="progress-bar-container">
+            <ul>
+              <li class="step step01 active">
+                <div class="step-inner">2015</div>              
+              </li>
+              <li class="step step02">
+                <div class="step-inner">2017</div>              
+              </li>
+              <li class="step step03">
+                <div class="step-inner">2018</div>              
+              </li>
+              <li class="step step04">
+                <div class="step-inner">2019</div>              
+              </li>
+              <li class="step step05">
+                <div class="step-inner">2020</div>              
+              </li>
+            </ul>
+            <div id="line">
+              <div id="line-progress"></div>
+            </div>
+          </div>
+
+          <div id="progress-content-section">
+            <div class="section-content discovery active">
+              <h2>FIRST SECTION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore nemo, laborum dignissimos placeat, molestias corrupti ad commodi velit aut aliquam error mollitia. Esse expedita hic possimus a perferendis reprehenderit!             
+              </p>
+            </div>
+
+            <div class="section-content strategy">
+              <h2>SECOND SSECTION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore nemo, laborum dignissimos placeat, molestias corrupti ad commodi velit aut aliquam error mollitia. Esse expedita hic possimus a perferendis reprehenderit!             
+              </p>
+            </div>
+
+            <div class="section-content creative">
+              <h2>THIRD CREATIONS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore nemo, laborum dignissimos placeat, molestias corrupti ad commodi velit aut aliquam error mollitia. Esse expedita hic possimus a perferendis reprehenderit!             
+              </p>
+            </div>
+
+            <div class="section-content production">
+              <h2>FOURTH SECTION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore nemo, laborum dignissimos placeat, molestias corrupti ad commodi velit aut aliquam error mollitia. Esse expedita hic possimus a perferendis reprehenderit!             
+              </p>
+            </div>
+
+            <div class="section-content analysis">
+              <h2>FIFTH SECTION</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint inventore nemo, laborum dignissimos placeat, molestias corrupti ad commodi velit aut aliquam error mollitia. Esse expedita hic possimus a perferendis reprehenderit!             
+              </p>
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
       <!--projects title-->
@@ -373,5 +452,43 @@
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
       <script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script>
+    
+    $(".step").click( function() {
+	$(this).addClass("active").prevAll().addClass("active");
+	$(this).nextAll().removeClass("active");
+});
+
+$(".step01").click( function() {
+	$("#line-progress").css("width", "3%");
+	$(".discovery").addClass("active").siblings().removeClass("active");
+});
+
+$(".step02").click( function() {
+	$("#line-progress").css("width", "25%");
+	$(".strategy").addClass("active").siblings().removeClass("active");
+});
+
+$(".step03").click( function() {
+	$("#line-progress").css("width", "50%");
+	$(".creative").addClass("active").siblings().removeClass("active");
+});
+
+$(".step04").click( function() {
+	$("#line-progress").css("width", "75%");
+	$(".production").addClass("active").siblings().removeClass("active");
+});
+
+$(".step05").click( function() {
+	$("#line-progress").css("width", "100%");
+	$(".analysis").addClass("active").siblings().removeClass("active");
+});
+
+ 
+    </script>
+
     </body>
 	</html>
