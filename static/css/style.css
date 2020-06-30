@@ -142,7 +142,7 @@
 }
 
 .timeline h1 span {
-  color: deepskyblue;
+  color: rgb(176, 123, 35);
 }
 
 .process-wrapper {
@@ -175,13 +175,13 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: solid 2px #aaa;
+  border: solid 1px #aaa;
   transition: all ease 0.3s;
 }
 
 #progress-bar-container li.active:before,
 #progress-bar-container li:hover:before {
-  background: deepskyblue;
+  background: rgb(176, 123, 35);
 }
 
 #progress-bar-container li {
@@ -210,7 +210,7 @@
 /* color text of each timeline list item */
 #progress-bar-container li.active,
 #progress-bar-container li:hover {
-  color: deepskyblue;
+  color: rgb(176, 123, 35);
 }
 
 /* dots on line under text of each list item */
@@ -224,17 +224,17 @@
   border: solid 6px white;
   border-radius: 50%;
   margin-top: 40px;
-  box-shadow: 0 2px 13px -1px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 13px -1px rgb(176, 123, 35);
   transition: all ease 0.2s;  
 }
 
 
 #progress-bar-container li:hover:after {
-  background: deepskyblue;
+  background: rgb(176, 123, 35);
 }
 
 #progress-bar-container li.active:after {
-  background: deepskyblue;
+  background: rgb(176, 123, 35);
 }
 
 #progress-bar-container #line {
@@ -254,8 +254,8 @@
   content: "";
   width: 3%;
   height: 100%;
-  background: deepskyblue;
-  background: linear-gradient(to right, deepskyblue 0%, #2ea3b7 100%);
+  background: rgb(176, 123, 35);
+  background: linear-gradient(to right, rgb(176, 123, 35) 0%, rgb(176, 123, 35) 100%);
   position: absolute;
   z-index: 2;
   border-radius: 50px;
@@ -265,8 +265,8 @@
 #progress-content-section {
   width: 90%;
   margin: auto;
-  background: #f3f3f3;
-  border-radius: 4px;
+  background: #d1d1d1;
+  border-radius: 15px;
 }
 
 #progress-content-section .section-content {
@@ -321,6 +321,7 @@
   position: absolute;
   bottom: 20px;
   left: 7.5%;
+ 
   
 }
 
