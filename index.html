@@ -270,7 +270,7 @@
       </div>
 
       <!--project cards-->
-      <div class="container padding">
+      <div class="container padding cards-container">
         <div class="row">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -285,60 +285,86 @@
           </ul>
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="recent-projects" role="tabpanel" aria-labelledby="pills-home-tab">
-              <div class="row">
+              <div class="row justify-content-center">
 
-                <div class="col-md-3">
+                <div class="col-md-3 card-size">
                   <div class="card">
                     <img class="card-img-top" src="static/images/yolo.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Object Detection App for Household Products</strong></h5>
                       <p class="card-text">Web app that detects household objects in uploaded images/videos or a live video feed, and returns a list of similar items that are found on the Walmart website.</p>
-                      <button type="button" class="btn card-keyword">python</button>
-                      <button type="button" class="btn card-keyword">yolov3</button>
-                      <button type="button" class="btn card-keyword">flask</button>
-                      <button type="button" class="btn card-keyword">opencv</button>
-                      <button type="button" class="btn card-keyword">javascript</button>
-                      <button type="button" class="btn card-keyword">beautifulsoup</button>
-                      <button type="button" class="btn card-keyword">splinter</button>
-
+                      <div class="card-keywords">
+                        <button type="button" class="btn">python</button>
+                        <button type="button" class="btn">yolov3</button>
+                        <button type="button" class="btn">flask</button>
+                        <button type="button" class="btn">opencv</button>
+                        <button type="button" class="btn">javascript</button>
+                        <button type="button" class="btn">beautifulsoup</button>
+                        <button type="button" class="btn">splinter</button>
+                      </div>
                       <br>
-                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary">See More</a>
+                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary">Learn More</a>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-md-3">
+                <div class="col-md-3 card-size">
                   <div class="card" >
                     <img class="card-img-top" src="static/images/human-trafficking.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Human Trafficking</strong></h5>
-                      <p class="card-text">Created a website containing human trafficking statistics using Python, JavaScript and MongoDB.</p>
-                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn-outline-secondary">See More</a>
+                      <p class="card-text">Built an interactive webpage to analyze human trafficking events accross the globe through dynamic charts, maps and tables.</p>
+                      <div class="card-keywords">
+                        <button type="text" class="btn">javascript</button>
+                        <button type="button" class="btn">python</button>
+                        <button type="button" class="btn">mongodb</button>
+                        <button type="button" class="btn">d3.js</button>
+                        <button type="button" class="btn">plotly.js</button>
+                        <button type="button" class="btn">leaflet.js</button>
+                        <button type="button" class="btn">anychart.js</button>
+                        <button type="button" class="btn">mapbox.js</button>                       
+                      </div>
+                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn-outline-secondary">Learn More</a>                      
                     </div>
                   </div>
                 </div>
-      
-                <div class="col-md-3">
+                
+                <div class="col-md-3 card-size">
+                  <div class="card" >
+                    <img class="card-img-top" src="static/images/tmt-raleigh.jpg">
+                    <div class="card-body">
+                      <h5 class="card-title"><strong>Web Portal for Franchise Entities</strong></h5>
+                      <p class="card-text">Website that enables 6 franchises of Two Men and a Truck&#174; to efficienty store, share and update information, download reports, and obtain performance insights through interactive charts and tables.</p>
+                      <div class="card-keywords">
+                        <button type="text" class="btn">flask</button>
+                        <button type="button" class="btn">python</button>
+                        <button type="button" class="btn">jquery</button>
+                        <button type="button" class="btn">javascript</button>
+                        <button type="button" class="btn">plotly.js</button>                      
+                      </div>
+                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">Learn More</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3 card-size">
                   <div class="card" >
                     <img class="card-img-top" src="static/images/housing-market-project.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>US Housing Market</strong></h5>
-                      <p class="card-text">Analyzed trends since the 2008 financial crash using Python.</p>
-                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">See More</a>
+                      <p class="card-text">Analysis of US housing data since the 2008 crash to identify how the market has rebounded between then and 2019.</p>
+                      <div class="card-keywords">
+                        <button type="button" class="btn">python</button>
+                        <button type="button" class="btn">pandas</button>
+                        <button type="button" class="btn">matplotlib</button>
+                        <button type="button" class="btn">numpy</button>
+                      </div>
+                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">Learn More</a>                      
                     </div>
                   </div>
                 </div>
       
-                <div class="col-md-3">
-                  <div class="card" >
-                    <img class="card-img-top" src="static/images/tmt-raleigh.jpg">
-                    <div class="card-body">
-                      <h5 class="card-title"><strong>Moving Company Portal</strong></h5>
-                      <p class="card-text">Created an interactive website to be used by multiple franchises of Two Men and a Truck.</p>
-                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">See More</a>
-                    </div>
-                  </div>
-                </div>
+                
     
               </div>
 
