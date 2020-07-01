@@ -413,6 +413,10 @@ background-size: cover;
   
 }
 
+#contact a {
+  color: white;
+}
+
 /* #home {
   background: url("../images/387.jpg") no-repeat center center fixed;
   color: white;
