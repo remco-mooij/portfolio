@@ -23,10 +23,11 @@
 
 		<body>
 	
-      <nav class="navbar navbar-expand-md navbar-light sticky-top" style="position:relative; background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);">
-          <a class="navbar-brand" href="#">
+      <nav id="navbar" class="navbar navbar-expand-md navbar-light sticky-top">
+          <!-- <a class="navbar-brand" href="#">
             <img src="static/images/mooij-logo.png" style="max-height: 200px; position:absolute; left: 50%; top: -20px; margin-left: -100px !important; display:block;">
-          </a>
+          </a> -->
+          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,10 +54,18 @@
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form> -->
           </div>
+        
       </nav>
       
+     
+
       <div class="container text-center">
-        <div id="particles-js"></div>  
+        <div id="particles-js"></div>
+        <div class="family-crest">
+          <a class="navbar-brand" href="#">
+            <img src="static/images/mooij-logo.png" style="max-height: 200px; position:absolute; left: 50%; top: -20px; margin-left: -100px !important; display:block;">
+          </a>
+        </div>
         <div class="home-text">
           <h1>Versatile Data Analyst</h1>
           <h2>Remco Mooij</h2>
@@ -87,32 +96,9 @@
             <h2>About Me</h2>
             <hr style="text-align: left; margin-left: 0; margin-right:5%;">
             <img class="headshot" src="static/images/headshot.jpg">
-            <p class="about-text"> I am a Data Analyst with a diverse background in Biotechnology and in business.
-              Born and raised in the Netherlands, I moved to the U.S in December 2018 and am currently working as a
-              Financial Coordinator for multiple franchises in the Moving Industry. Prior to my move, I obtained a
-              BS degree in Biotechnology from Inholland University of Applied Sciences in Amsterdam, and an MS degree
-              in Science and Business Management from Utrecht University. During my studies I completed several research
-              projects in laboratory settings, and gained valuable experience in conducting scientific research, analyzing
-              and visualizing large datasets, and demonstrating my results in writing and presenting. After completing my
-              undergraduate studies, I was increasingly interested to further develop myself in the business world. While
-              I was skilled at doing research in a lab, I had a strong desire to apply my skills outside of an academic
-              environment. I decided to enroll in a 2-year master’s program called Science and Business Management, a
-              program specifically designed for students with a scientific background. I successfully finished my master’s
-              with an internship at Accenture, where I worked on a business transformation project for one of their clients
-              focused on the digitalization, automation and robotization of processes in all major company divisions. In
-              line with my agricultural biotechnology background, I wrote my thesis about the future of agriculture, and
-              how science and modern agricultural technologies can contribute to guaranteeing future food security to the
-              developing world.
+            <p class="about-text"> I am a Data Analyst with a diverse background in Biotechnology and in business. Born and raised in the Netherlands, I moved to the U.S in December 2018 and am currently working as a Financial Coordinator for multiple franchises in the Moving Industry. Prior to my move, I obtained a BS degree in Biotechnology from Inholland University of Applied Sciences in Amsterdam, and an MS degree in Science and Business Management from Utrecht University. During my studies I completed several research projects in laboratory settings, and gained valuable experience in conducting scientific research, analyzing and visualizing large datasets, and demonstrating my results in writing and presenting. After completing my undergraduate studies, I was increasingly interested to further develop myself in the business world. While I was skilled at doing research in a lab, I had a strong desire to apply my skills outside of an academic environment. I decided to enroll in a 2-year master’s program called Science and Business Management, a program specifically designed for students with a scientific background. I successfully finished my master’s with an internship at Accenture, where I worked on a business transformation project for one of their clients focused on the digitalization, automation and robotization of processes in all major company divisions. In line with my agricultural biotechnology background, I wrote my thesis about the future of agriculture, and how science and modern agricultural technologies can contribute to guaranteeing future food security to the developing world.              
             </p>
-            <p class="about-text">During my studies I met my wife, who already lived in the US at the time. After obtaining
-              my MS degree I moved in with her and continued my career on the other side of the big pond. To get some
-              experience in the US, I started out with a volunteer research position at NC State University, where I performed
-              genetic research on Monkeyflower plants. In Fall 2019, I started with a 6-month intensive Data Analytics bootcamp
-              at the University of North Carolina at Chapel Hill. This is where I found my true passion. All my past research
-              and internships showed me that I am very detail-oriented and love to analyze, structure and make sense of data.
-              The bootcamp provided me with the additional skills I needed to be successful as a Data Analyst, and as of now I
-              continue to work on multiple projects to visualize trends, get valuable insights, launch user-friendly web-based
-              apps and polish my skills.
+            <p class="about-text">During my studies I met my wife, who already lived in the US at the time. After obtaining my MS degree I moved in with her and continued my career on the other side of the big pond. To get some experience in the US, I started out with a volunteer research position at NC State University, where I performed genetic research on Monkeyflower plants. In Fall 2019, I started with a 6-month intensive Data Analytics bootcamp at the University of North Carolina at Chapel Hill. This is where I found my true passion. All my past research and internships showed me that I am very detail-oriented and love to analyze, structure and make sense of data. The bootcamp provided me with the additional skills I needed to be successful as a Data Analyst, and as of now I continue to work on multiple projects to visualize trends, get valuable insights, launch user-friendly web-based apps and polish my skills              
             </p>
  
           </div>
@@ -272,7 +258,7 @@
       </div>
 
       <!--project cards-->
-      <div class="container padding cards-container">
+      <div class="container cards-container">
         <div class="row">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -282,7 +268,7 @@
               <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#unc" role="tab" aria-controls="pills-profile" aria-selected="false">UNC Bootcamp</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Research</a>
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Biotech/Agriculture</a>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
@@ -290,11 +276,13 @@
               <div class="row justify-content-center">
 
                 <div class="col-md-3 card-size">
-                  <div class="card">
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/yolo.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Object Detection App for Household Products</strong></h5>
-                      <p class="card-text">Web app that detects household objects in uploaded images/videos or a live video feed, and returns a list of similar items that are found on the Walmart website.</p>
+                      <p class="card-text">
+                        Web app that detects household objects in uploaded images/videos or a live video feed, and returns a list of similar items that are found on the Walmart website.
+                      </p>
                       <div class="card-keywords">
                         <button type="button" class="btn">python</button>
                         <button type="button" class="btn">yolov3</button>
@@ -305,55 +293,61 @@
                         <button type="button" class="btn">splinter</button>
                       </div>
                       <br>
-                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary">Learn More</a>
+                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary card-button">Learn More</a>
                     </div>
                   </div>
                 </div>
                 
                 <div class="col-md-3 card-size">
-                  <div class="card" >
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/human-trafficking.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Human Trafficking</strong></h5>
-                      <p class="card-text">Interactive webpage to analyze human trafficking events accross the globe. Data is extracted from databanks and PDF reports and visualized through dynamic charts, maps and tables.</p>
+                      <p class="card-text">
+                        Interactive webpage to analyze human trafficking events accross the globe. Data is extracted from databanks and PDF reports and visualized through dynamic charts, maps and tables.
+                      </p>
                       <div class="card-keywords">
                         <button type="text" class="btn">javascript</button>
                         <button type="button" class="btn">python</button>
                         <button type="button" class="btn">mongodb</button>
                         <button type="button" class="btn">d3.js</button>
                         <button type="button" class="btn">plotly.js</button>
-                        <button type="button" class="btn">leaflet.js</button>
+                        <button type="button" class="btn">leaflet</button>
                         <button type="button" class="btn">anychart.js</button>
-                        <button type="button" class="btn">mapbox.js</button>                       
+                        <button type="button" class="btn">mapbox</button>                       
                       </div>
-                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn btn-outline-secondary">Learn More</a>                      
+                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn btn-outline-secondary card-button">Learn More</a>                      
                     </div>
                   </div>
                 </div>
                 
                 <div class="col-md-3 card-size">
-                  <div class="card" >
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/housing-market-project.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>US Housing Market</strong></h5>
-                      <p class="card-text">Analysis of US housing data since the 2008 crash to identify how the market has rebounded between then and 2019.</p>
+                      <p class="card-text">
+                        Analysis of US housing data since the 2008 crash to identify how the market has rebounded between then and 2019.
+                      </p>
                       <div class="card-keywords">
                         <button type="button" class="btn">python</button>
                         <button type="button" class="btn">pandas</button>
                         <button type="button" class="btn">matplotlib</button>
                         <button type="button" class="btn">numpy</button>
                       </div>
-                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">Learn More</a>                      
+                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary card-button">Learn More</a>                      
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3 card-size">
-                  <div class="card" >
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/tmt-raleigh.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Web Portal for Franchise Entities</strong></h5>
-                      <p class="card-text">Website that enables 6 franchises of Two Men and a Truck&#174; to efficienty store, share and update information, download reports, and obtain performance insights through interactive charts and tables.</p>
+                      <p class="card-text">
+                        Website that enables 6 franchises of Two Men and a Truck&#174; to efficienty store, share and update information, download reports, and obtain performance insights through interactive charts and tables.                        
+                      </p>
                       <div class="card-keywords">
                         <button type="text" class="btn">flask</button>
                         <button type="button" class="btn">python</button>
@@ -361,112 +355,135 @@
                         <button type="button" class="btn">javascript</button>
                         <button type="button" class="btn">plotly.js</button>                      
                       </div>
-                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">Learn More</a>
+                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary card-button">Learn More</a>
                     </div>
                   </div>
                 </div>      
     
               </div>
 
-            <!-- UNC Bootcamp -->
+            
             </div>
+
+            <!-- UNC Bootcamp -->
             <div class="tab-pane fade" id="unc" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="row">
 
                 <div class="col-md-3">
-                  <div class="card">
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/bb-dashboard.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Belly Button Biodiversity</strong></h5>
-                      <p class="card-text">Created a web-based app using Python and JavaScript that detects products in images/videos uploaded by the user and searches through online stores for those products.</p>
-                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary">See More</a>
+                      <p class="card-text">
+                        Interactive dashboard to explore the microbes inhabiting human navels, using the <a class="hyperlink-text" href="http://robdunnlab.com/projects/belly-button-biodiversity/" target="_blank"> Belly Button Biodiversity dataset</a>. It dynamically updates multiple charts based on the user's selection.
+                      </p>
+                      <div class="card-keywords">
+                        <button type="text" class="btn">d3.js</button>
+                        <button type="button" class="btn">plotly.js</button>
+                        <button type="button" class="btn">javascript</button>
+                        <button type="button" class="btn">json</button>                 
+                      </div>
+                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary card-button">See More</a>
                     </div>
                   </div>
                 </div>
                 
                 <div class="col-md-3">
-                  <div class="card" >
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/mars.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Mission to Mars</strong></h5>
-                      <p class="card-text">Created a website containing human trafficking statistics using Python, JavaScript and MongoDB.</p>
-                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn-outline-secondary">See More</a>
+                      <p class="card-text">
+                        Web app that displays recent data about Mars. It scrapes various websites such as Twitter and the NASA sites, adds the scraped data to a MongoDB database and displays it on a single webpage.
+                      </p>
+                      <div class="card-keywords">
+                        <button type="text" class="btn">beautifulsoup</button>
+                        <button type="button" class="btn">splinter</button>
+                        <button type="button" class="btn">flask</button>
+                        <button type="button" class="btn">mongodb</button>
+                        <button type="button" class="btn">python</button>                 
+                      </div>
+                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn-outline-secondary card-button">See More</a>
                     </div>
                   </div>
                 </div>
       
                 <div class="col-md-3">
-                  <div class="card" >
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/ufo-sightings.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>UFO sightings</strong></h5>
-                      <p class="card-text">Analyzed trends since the 2008 financial crash using Python.</p>
-                      <a href="https://github.com/remco-mooij/ufo-sightings" class="btn btn-outline-secondary">See More</a>
+                      <p class="card-text">
+                        Simple webpage that dynamically updates a table of reported UFO sighting based on the filters set by the user.
+                      </p>
+                      <a href="https://github.com/remco-mooij/ufo-sightings" class="btn btn-outline-secondary card-button">See More</a>
+                      <div class="card-keywords">
+                        <button type="text" class="btn">d3.js</button>
+                        <button type="button" class="btn">javascript</button>               
+                      </div>
                     </div>
                   </div>
                 </div>
       
                 <div class="col-md-3">
-                  <div class="card" >
+                  <div class="card standard-card">
                     <img class="card-img-top" src="static/images/weather-plots.jpg">
                     <div class="card-body">
                       <h5 class="card-title"><strong>Model of Weather Across World Cities</strong></h5>
-                      <p class="card-text">Created an interactive website to be used by multiple franchises of Two Men and a Truck.</p>
-                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">See More</a>
+                      <p class="card-text">
+                        Dashboard that contains visualizations of weather data from approximately 500 cities around the world. Data was obtained from the <a class="hyperlink-text" href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a>.
+                      </p>
+                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary card-button">See More</a>
+                      <div class="card-keywords">
+                        <button type="text" class="btn">api</button>
+                        <button type="button" class="btn">python</button>  
+                        <button type="button" class="btn">citypy</button>               
+                      </div>
                     </div>
                   </div>
                 </div>
     
               </div>
-
+            
             </div>
+
+            <!-- Biotech/Agriculture -->
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
               <div class="row">
 
-                <div class="col-md-3">
-                  <div class="card">
-                    <img class="card-img-top" src="static/images/yolo.jpg">
+                <div class="col-md-4">
+                  <div class="card research-card">
+                    <img class="card-img-top" src="static/images/mpf_research_report.jpg">
                     <div class="card-body">
-                      <h5 class="card-title"><strong>Object Detection App for Household Products</strong></h5>
-                      <p class="card-text">Created a web-based app using Python and JavaScript that detects products in images/videos uploaded by the user and searches through online stores for those products.</p>
-                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary">See More</a>
+                      <h5 class="card-title">
+                        <strong>Towards understanding sucrose-mediated changes in
+                        meristem activity in Arabidopsis thaliana</strong>
+                      </h5>
+                      <p class="card-text">This report was written as the completion of a large research project I worked on at the Molecular Plant Physiology group of Utrecht University during the last year of my bachelor's and the first year of my master's program.
+                      </p>
+                      <a href="https://github.com/remco-mooij/Object-Detection-Project" class="btn btn-outline-secondary card-button">View Report</a>
+                      <button type="button" class="btn btn-secondary card-download-button">Download</button>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-md-3">
-                  <div class="card" >
-                    <img class="card-img-top" src="static/images/human-trafficking.jpg">
+                <div class="col-md-4">
+                  <div class="card research-card">
+                    <img class="card-img-top" src="static/images/master-thesis.jpg">
                     <div class="card-body">
-                      <h4 class="card-title">Human Trafficking</h4>
-                      <p class="card-text">Created a website containing human trafficking statistics using Python, JavaScript and MongoDB.</p>
-                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn-outline-secondary">See More</a>
+                      <h5 class="card-title">
+                        <strong>The Future of Agriculture: Prospects of Precision Agriculture and Agricultural Biotechnology for the Developing World</strong>
+                      </h5>
+                      <p class="card-text">
+                        Master's thesis on how precision agriculture and agricultural biotechnology can contribute to safeguarding future food security in developing regions, and to assess what opportunities arise for startups and larger companies in pursuing this objective.
+                      </p>
+                      <a href="https://github.com/remco-mooij/human-trafficking-stats" class="btn btn-outline-secondary card-button">View Report</a>
+                      <button type="button" class="btn btn-secondary card-download-button">Download</button>
                     </div>
                   </div>
                 </div>
       
-                <div class="col-md-3">
-                  <div class="card" >
-                    <img class="card-img-top" src="static/images/housing-market-project.jpg">
-                    <div class="card-body">
-                      <h4 class="card-title">US Housing Market</h4>
-                      <p class="card-text">Analyzed trends since the 2008 financial crash using Python.</p>
-                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">See More</a>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="col-md-3">
-                  <div class="card" >
-                    <img class="card-img-top" src="static/images/tmt-raleigh.jpg">
-                    <div class="card-body">
-                      <h4 class="card-title">Moving Company Portal</h4>
-                      <p class="card-text">Created an interactive website to be used by multiple franchises of Two Men and a Truck.</p>
-                      <a href="https://github.com/remco-mooij/US-Housing-Market-Analysis" class="btn btn-outline-secondary">See More</a>
-                    </div>
-                  </div>
-                </div>
-    
+                    
               </div>
 
             </div>
@@ -562,6 +579,19 @@ $(".step05").click( function() {
  
 </script>
 
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-65px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+</script>
 
     </body>
 	</html>

@@ -21,8 +21,25 @@
   
 }
 
+.hyperlink-text {
+  color: rgb(176, 123, 35);
+}
+
+.hyperlink-text:hover {
+  color: rgb(200, 123, 35);
+}
+
 .navbar-nav {
   font-size: 20px;
+}
+
+.navbar {  
+  position:fixed;
+  width: 100%;
+  top: 0;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  z-index: 1;
+  transition: top 0.3s;
 }
 
 .nav-spacing {
@@ -41,6 +58,11 @@
   bottom: 0;
   left: 0;
   z-index:0;
+}
+
+.family-crest {
+  position: relative;
+  z-index: 1;
 }
 
 .home-text {
@@ -62,7 +84,7 @@
 }
 
 .about-me {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .headshot {
@@ -82,7 +104,7 @@
 
 
 .padding-first-section {
-  padding: 120px 0px 0px 0px;
+  padding: 140px 0px 0px 0px;
 }
 
 .padding {
@@ -282,8 +304,16 @@
   width: 110%;  
 }
 
+
+
+.research-card {
+  height: 550px;
+  width: 107%;  
+}
+
 .cards-container {  
   width: 90%;
+  margin-top: 1%;
 }
 
 .card-img-top {
@@ -294,7 +324,6 @@
 
 
 .card-text {
-  margin-bottom: 10%;
   font-size: 14px;
 }
 
@@ -315,15 +344,24 @@
 
 }
 
-
-
-.card-body a {
+.card-button {
   position: absolute;
   bottom: 20px;
-  left: 7.5%;
- 
-  
+  left: 20px;
+  border-color: rgb(176, 123, 35);
+  color: rgb(176, 123, 35);  
 }
+
+.card-download-button {
+  position: absolute;
+  bottom: 20px;
+  left: 130px;
+}
+
+/* .card-button:hover {
+  background: rgb(176, 123, 35);
+  color: white;
+} */
 
 /*--- Fixed Background Image --*/
 figure {
