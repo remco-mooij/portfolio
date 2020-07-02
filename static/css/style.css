@@ -23,6 +23,7 @@
 
 .hyperlink-text {
   color: rgb(176, 123, 35);
+  
 }
 
 .hyperlink-text:hover {
@@ -146,6 +147,14 @@
 }
 
 /* Timeline */
+
+/********************************************************************
+* Title: How to create Modern Timeline just by using HTML CSS JQuery
+* Author: Adil Ahmed
+* Date: 2020
+* Availability: https://www.youtube.com/watch?v=oXLha6A4gjc&t=10s
+*
+********************************************************************/
 
 .timeline h1 {
   color: black;
@@ -290,6 +299,43 @@
   text-align: center;  
 }
 
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:#333;
+	letter-spacing:1px;
+}
+
+#progress-content-section .section-content p {
+	font-size:16px;
+	line-height:1.8em;
+	color:#777;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
+}
+
 /* Projects */
 
 
@@ -350,6 +396,7 @@
   position: absolute;
   bottom: 20px;
   left: 130px;
+  color: white;
 }
 
 /* .card-button:hover {
@@ -410,6 +457,8 @@ background-size: cover;
 #contact a {
   color: white;
 }
+
+
 
 /* #home {
   background: url("../images/387.jpg") no-repeat center center fixed;
