@@ -89,7 +89,7 @@
       <!--first section-->
       
       <div class="container padding-first-section">
-        <div class="row">
+        <div class="row justify-content-around">
 
           <!--about me-->
           <div id="about-me" class="col-md-6 float-left">
@@ -104,7 +104,7 @@
           </div>
 
           <!--skills & qualifications-->
-          <div class="col-md-6 float-right">
+          <div class="col-md-5 float-right">
             <div id="slides" class="carousel slide" >
               <ul class="carousel-indicators">
                 <li data-target="#slides" data-slide-to="0" class="active"></li>
@@ -118,14 +118,15 @@
                   <div class="carousel-caption"> -->
                     <h2 style="margin-bottom: 10px;">Skills & Qualifications</h2>
                     <hr style="text-align: left; margin-left: 0;">
-                    <p style="color: rgb(122, 90, 1); margin-bottom: 5px; font-size: 22px;"><strong>Technical Skills</strong></p>
+                    <p style="color: rgb(176, 123, 35); margin-bottom: 5px; font-size: 22px;"><strong>Technical Skills</strong></p>
                     <p><strong>Programming Languages: </strong>Python, JavaScript, HTML, CSS, VBA
                     <p><strong>Python Libaries: </strong>Pandas, Matplotlib, Numpy, Flask, TensorFlow</p>
                     <p><strong>JavaScript Libraries: </strong>D3, jQuery, Plotly.js, Leaflet</p>
                     <p><strong>Databases/ORM: </strong>SQL, NoSQL (MongoDB), PostgreSQL, SQLite, SQLAlchemy </p>
                       
                     
-                    <p style="color: rgb(122, 90, 1); margin-bottom: 5px; font-size: 22px;"><strong>Professional Skills</strong></p>
+                    <p style="color: rgb(176, 123, 35); margin-bottom: 5px; font-size: 22px;"><strong>Professional Skills</strong></p>
+                    <!--style="color: rgb(122, 90, 1);-->
                     <p>Strong analytical skills, great attention to detail, problem solver, strong interpersonal & communication skills, financial reporting skills, project management experience, sales and consulting experience, scientific research experience.</p>
                     
                   <!-- </div> -->
@@ -133,41 +134,51 @@
                 </div>
                 <div class="carousel-item">
                   <h2 style="margin-bottom: 10px;">Education</h2>
-                  <hr style="text-align: left; margin-left: 0;">
-                  <img src="static/images/logo-unc.png" style="max-height:50px;">
-                  <p class="education"><i>University of North Carolina</i> | Chapel Hill, NC</p>
-                  <p><strong>Certificate in Data Analytics</strong></p>                  
-                  <img src="static/images/logo-utrecht-university.png" style="max-height:50px;">                  
-                  <p class="education"><i>Utrecht University</i> | Utrecht, Netherlands</p>
-                  <p><strong>Master of Science: Science & Business Management</strong></p>
-                  <img src="static/images/inholland.svg" style="max-height:50px;"> 
-                  <p class="education"><i>Inholland University of Applied Sciences</i> | Amsterdam, Netherlands</p>
-                  <p><strong>Bachelor of Science: Biotechnology</strong></p>
+                  <hr style="text-align: left; margin-left: 0;">      
+                  <img src="static/images/logo-unc.png">
+                  <p id="education"><strong>Certificate in Data Analytics</strong></p>
+                  <p id="education">University of North Carolina | Chapel Hill, NC</p>
+                  <p id="education">May 2020</p>
+                  <hr>                  
+                  <img src="static/images/logo-utrecht-university.png">                  
+                  <p id="education"><strong>Master of Science: Science & Business Management</strong></p>
+                  <p id="education">Utrecht University | Utrecht, Netherlands</p>
+                  <p id="education">May 2018</p>
+                  <hr>
+                  <img src="static/images/inholland.svg" style="height: 30px;"> 
+                  <p id="education"><strong>Bachelor of Science: Biotechnology</strong></p>
+                  <p id="education">Inholland University of Applied Sciences | Amsterdam, Netherlands</p>
+                  <p id="education">July 2015</p>
                 </div>
                 
               </div>
             </div>
             <br>
-            <div id="contact-info" class="text-center">
+            <div class="text-center">
               <h2>Contact Information</h2>
               <hr style="text-align: left; margin-left: 0; margin-right:5%; margin-bottom: 5%;">
-              <img src="static/images/home-icon.png" style="max-height:40px;"> 
-              <p>Raleigh, NC</p>
-              <a href="https://github.com/remco-mooij" target="_blank">
-                <img src="static/images/logo-github.png" style="max-height: 70px;">
-              </a>
-              
-              <br><br>
-              <a href="https://www.linkedin.com/in/remcomooij" target="_blank">
-                <img src="static/images/LI-Logo.png" style="max-height: 30px;">
-              </a>
-              
-              <br><br>
-              <a href="mailto:remcomooij@gmail.com">
-                <img src="static/images/email-icon.png" style="max-height:40px;">
-                <p>RemcoMooij@gmail.com</p>
-              </a>
-              
+              <div id="contact-info">
+                <div class="contact-item">
+                  <img src="static/images/home-icon.png" style="max-height:40px;"> 
+                  <p>Raleigh, NC</p>
+                </div>
+                <div class="contact-item">
+                  <a class="hyperlink-text" href="mailto:remcomooij@gmail.com">
+                    <img src="static/images/email-icon.png" style="max-height:40px;">
+                    <p>RemcoMooij@gmail.com</p>
+                  </a>
+                </div>
+                <div class="contact-item">
+                  <a href="https://github.com/remco-mooij" target="_blank">
+                    <img src="static/images/logo-github.png" style="max-height: 65px;">
+                  </a>
+                </div>
+                <div class="contact-item">
+                  <a href="https://www.linkedin.com/in/remcomooij" target="_blank">
+                    <img src="static/images/LI-Logo.png" style="max-height: 30px; margin-top: 30px;">
+                  </a>
+                </div>
+                
               
             </div>
   
@@ -176,7 +187,7 @@
         </div>
         
       </div>
-
+      </div>
       <!-- Timeline-->
 
       <!---------------------------------------------------------------------------------
@@ -187,7 +198,7 @@
       -
       ---------------------------------------------------------------------------------->
       
-      <!-- <div class="timeline">
+      <div class="timeline">
         <h1>CAREER <span>TIMELINE</span></h1>
         <br>
         <div class="process-wrapper">
@@ -255,7 +266,7 @@
 
         </div>
 
-      </div> -->
+      </div>
 
       <br><br>
 
@@ -586,7 +597,7 @@
         
       </div>  
       
-      
+    
 
       <br><br>
 
