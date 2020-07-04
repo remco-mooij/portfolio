@@ -11,6 +11,12 @@
   
 }
 
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  }
+
 .hyperlink-text {
   color: rgb(176, 123, 35);
   
@@ -558,6 +564,12 @@ background-size: cover;
   }
   
 } */
+
+
+.contact-form input {
+  display: block;
+  box-sizing: border-box;
+}
 
 /*
 Extra small (xs) devices (portrait phones, less than 576px)

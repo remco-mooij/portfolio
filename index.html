@@ -651,7 +651,7 @@
       
 
       <div id="contact">
-        <div class="contact-text" style="color: white;">
+        <!-- <div class="contact-text" style="color: white;">
           <h1>Contact Me</h1>
           <br>
           <h5>Remco Mooij</h5>
@@ -662,9 +662,18 @@
           <h5><strong><a href="https://github.com/remco-mooij">Github Page</a></strong></h5>
           <br>
           <h6>Email: RemcoMooij@gmail.com</h6>
-          <!-- <button type="button" class="btn btn-outline-light btn-lg">Contact Me</button>
+          <--<button type="button" class="btn btn-outline-light btn-lg">Contact Me</button>
           <button type="button" class="btn btn-primary btn-lg">Get Started</button> -->
-        </div>        
+        <!-- </div>         --> -->
+        <p>Send E-mail</p>
+        <form class="contact-form" action="contactform.php" method="post">
+          <input type="text" name="name" placeholder="Full name">
+          <input type="text" name="mail" placeholder="Your e-mail">
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit" name="submit">SEND MAIL</button>
+        </form>
+            
       </div>
 			<footer>
 
