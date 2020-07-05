@@ -33,7 +33,6 @@
 }
 
 .navbar {  
-  
   width: 100%;
   top: 0;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -92,6 +91,15 @@
 .family-crest {
   position: relative;
   z-index: 1;
+}
+
+.family-crest img {
+  max-height: 200px;
+  position:absolute;
+  left: 50%;
+  top: -82px;
+  margin-left: -100px !important;
+  display:block;
 }
 
 .home-text {
