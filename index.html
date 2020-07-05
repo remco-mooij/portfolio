@@ -14,7 +14,7 @@
               background-position: center;
               background-size: cover;
               font-family: 'Roboto Condensed', sans-serif;
-      
+              margin-bottom: 0px;      
             }
       </style>
 
@@ -650,31 +650,50 @@
 
       
 
-      <div id="contact">
-        <!-- <div class="contact-text" style="color: white;">
-          <h1>Contact Me</h1>
-          <br>
-          <h5>Remco Mooij</h5>
-          <h6>1101-J Lady's Slipper Court</h6>
-          <h6>Raleigh, NC</h6></h6>
-          <br>
-          <h5><strong><a href="https://www.linkedin.com/in/remcomooij">LinkedIn Profile</a></strong></h5>
-          <h5><strong><a href="https://github.com/remco-mooij">Github Page</a></strong></h5>
-          <br>
-          <h6>Email: RemcoMooij@gmail.com</h6>
-          <--<button type="button" class="btn btn-outline-light btn-lg">Contact Me</button>
-          <button type="button" class="btn btn-primary btn-lg">Get Started</button> -->
-        <!-- </div>         --> -->
-        <p>Send E-mail</p>
-        <form action="https://formspree.io/mnqggdgl" method="POST">
-          <input type="text" name="name">
-          <input type="email" name="_replyto">
-          <input type="submit" value="Send">
-        </form>
-            
-      </div>
-			<footer>
+      <div class="container-fluid" id="contact">
+        <div class="row justify-content-center">
 
+          <div class="col-12 col-sm-12 col-md-5" id="bottom-contact-info">
+            <h1>Info</h1>
+            <h2>Remco Mooij</h2>
+            <h5>Raleigh, NC</h5>
+            <br><br>
+            <h5><strong><u><a href="https://www.linkedin.com/in/remcomooij">LinkedIn Profile</a></u></strong></h5>
+            <h5><strong><u><a href="https://github.com/remco-mooij">Github Page</a></u></strong></h5>
+            <br>
+            <h6>Email: RemcoMooij@gmail.com</h6>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-5" id="contact-me">           
+            <h1>Contact Me</h1>
+            <div id="contact-form">
+              <form action="https://formspree.io/mnqggdgl" method="POST">
+                <div class="row">
+
+                  <div class="col-md-6 input-small">
+                    <input class="form-control" type="text" name="name" placeholder="Your name" required>
+                  </div>
+
+                  <div class="col-md-6 input-small">
+                    <input class="form-control" type="email" name="_replyto" placeholder="Your email" required>
+                  </div>
+
+                </div>
+
+                <textarea class="form-control" name="message" placeholder="Type your message" required></textarea>
+                <button class="form-control form-submit" type="submit">Send Message</button>
+              </form>
+            </div>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+     
+			<footer>
+        <p>2020 Portfolio Remco Mooij</p>
 			</footer>
 
 
