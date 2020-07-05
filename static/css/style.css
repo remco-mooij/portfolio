@@ -494,17 +494,21 @@ figure {
 }
 
 #bottom-contact-info h2 { 
-  margin-top: 4%; 
+  margin-top: 6%; 
   margin-left: 10%;
   font-size: 20px;
 }
 
-#bottom-contact-info h5 {  
+#bottom-contact-info h5 {
   margin-left: 10%;
 }
 
+.contact-links {
+  margin-top: -10px;
+}
+
 #bottom-contact-info h6 {
-  margin-top: 1%;
+  margin-top: 1.5%;
   margin-left: 10%;  
   font-size: 20px;
 }
