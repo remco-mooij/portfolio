@@ -531,11 +531,10 @@ figure {
 }
 
 .form-control {
-  display: block;
-  
+  display: block;  
   border: none;
   outline: none;
-  color: white;
+  color: black;
   font-size: 18px;
   margin-bottom: 16px;
 }
