@@ -14,7 +14,7 @@
               background-position: center;
               background-size: cover;
               font-family: 'Roboto Condensed', sans-serif;
-              margin-bottom: 0px;      
+              margin-bottom: 0px;
             }
       </style>
 
@@ -39,14 +39,20 @@
               <li class="nav-item active nav-spacing">
                 <a class="nav-link" href="#"><b>Home</b> <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item nav-tab-font" style="margin-right: 220px;">
+              <li class="nav-item nav-spacing">
                 <a class="nav-link" href="#about-me"><b>About</b></a>
+              </li>
+              <li class="nav-item timeline-tab">
+                <a class="nav-link" href="#timeline"><b>Timeline</b></a>
               </li>
               <li class="nav-item nav-spacing">
                 <a class="nav-link" href="#projects"><b>Projects</b></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item nav-spacing">
                 <a class="nav-link" href="#contact"><b>Contact</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#resume"><b>Resume</b></a>
               </li>
             </ul>
             <!-- <form class="form-inline my-2 my-lg-0">
@@ -54,7 +60,30 @@
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form> -->
           </div>
-        
+          
+          <!--Resume modal-->
+          <div class="modal right fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Resume</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                  
+                  <img class="resume-img" src="static/images/resume.jpg">
+                </div>
+                <div class="modal-footer">
+                  <a type="button" class="btn btn-outline-secondary resume-download" href="static/documents/Resume.pdf" target="_blank">Download</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
       </nav>
       
      
@@ -95,7 +124,7 @@
           <div id="about-me" class="col-11 col-sm-11 col-md-6 float-left">
             <h2>About Me</h2>
             <hr style="text-align: left; margin-left: 0; margin-right:5%;">
-            <img class="headshot" src="static/images/headshot.jpg">
+            <img class="headshot" src="static/images/headshot.png">
             <p class="about-text"> I am a Data Analyst with a diverse background in Biotechnology and in business. Born and raised in the Netherlands, I moved to the U.S in December 2018 and am currently working as a Financial Coordinator for multiple franchises in the Moving Industry. Prior to my move, I obtained a BS degree in Biotechnology from Inholland University of Applied Sciences in Amsterdam, and an MS degree in Science and Business Management from Utrecht University. During my studies I completed several research projects in laboratory settings, and gained valuable experience in conducting scientific research, analyzing and visualizing large datasets, and demonstrating my results in writing and presenting. After completing my undergraduate studies, I was increasingly interested to further develop myself in the business world. While I was skilled at doing research in a lab, I had a strong desire to apply my skills outside of an academic environment. I decided to enroll in a 2-year master’s program called Science and Business Management, a program specifically designed for students with a scientific background. I successfully finished my master’s with an internship at Accenture, where I worked on a business transformation project for one of their clients focused on the digitalization, automation and robotization of processes in all major company divisions. In line with my agricultural biotechnology background, I wrote my thesis about the future of agriculture, and how science and modern agricultural technologies can contribute to guaranteeing future food security to the developing world.              
             </p>
             <p class="about-text">During my studies I met my wife, who already lived in the US at the time. After obtaining my MS degree I moved in with her and continued my career on the other side of the big pond. To get some experience in the US, I started out with a volunteer research position at NC State University, where I performed genetic research on Monkeyflower plants. In Fall 2019, I started with a 6-month intensive Data Analytics bootcamp at the University of North Carolina at Chapel Hill. This is where I found my true passion. All my past research and internships showed me that I am very detail-oriented and love to analyze, structure and make sense of data. The bootcamp provided me with the additional skills I needed to be successful as a Data Analyst, and as of now I continue to work on multiple projects to visualize trends, get valuable insights, launch user-friendly web-based apps and polish my skills              
@@ -198,7 +227,7 @@
       -
       ---------------------------------------------------------------------------------->
       
-      <div class="timeline">
+      <div id="timeline">
         <h1>CAREER <span>TIMELINE</span></h1>
         <br>
         <div class="process-wrapper">
