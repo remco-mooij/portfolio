@@ -11,8 +11,6 @@
   
 }
 
-
-
 .btn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -42,6 +40,10 @@
 
 .nav-spacing {
   margin-right: 50px;
+}
+
+.nav-link {
+  cursor: pointer;
 }
 
 .modal-backdrop {
